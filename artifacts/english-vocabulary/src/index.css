@@ -258,3 +258,10 @@
 @media (prefers-reduced-motion: reduce) {
  *, *::before, *::after { scroll-behavior:auto !important; animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; }
 }
+
+/* Teacher byline + logo banner */
+.byline { background: linear-gradient(90deg,#12307a,#2459c9 55%,#12307a); color: #e8efff; text-align: center; font-size: 13px; font-weight: 700; letter-spacing: .1em; padding: 9px 12px; position: relative; z-index: 11; }
+.byline strong { color: #ffd23f; font-weight: 800; }
+.logo-banner { padding-top: 6px; }
+.logo-banner img { display: block; width: 100%; max-width: 760px; margin: 0 auto; border-radius: 28px; box-shadow: 0 18px 40px #0f1f4f40; aspect-ratio: 3 / 2; object-fit: cover; }
+@media (max-width: 720px) { .logo-banner img { border-radius: 20px; } }
