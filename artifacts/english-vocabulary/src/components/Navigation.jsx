@@ -14,7 +14,7 @@ export function Navigation() {
     <header className="topbar">
       <div className="container nav-inner">
         <Link href="/" className="brand" data-testid="link-brand">
-          <img className="brand-logo" src={`${import.meta.env.BASE_URL}images/logo-small.jpg`} alt="English Words logo" data-testid="img-logo" />
+          <img className="brand-logo" src={`${import.meta.env.BASE_URL}images/logo-small.png`} alt="English Words logo" data-testid="img-logo" />
           <span className="brand-name">English Vocabulary<small>Learn a little every day</small></span>
         </Link>
         <button className="mobile-menu" aria-label={open ? "Close navigation" : "Open navigation"} aria-expanded={open} onClick={() => setOpen(!open)} data-testid="button-mobile-menu">
