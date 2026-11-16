@@ -11,8 +11,6 @@ export function Navigation() {
     { href: "/about", label: "About" },
   ];
   return (
-    <>
-    <div className="byline" data-testid="text-byline">By <strong>Teacher Ali</strong></div>
     <header className="topbar">
       <div className="container nav-inner">
         <Link href="/" className="brand" data-testid="link-brand">
@@ -32,6 +30,5 @@ export function Navigation() {
         </nav>
       </div>
     </header>
-    </>
   );
 }

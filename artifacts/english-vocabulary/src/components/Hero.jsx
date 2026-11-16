@@ -6,6 +6,7 @@ export function Hero() {
       <div className="hero-copy">
         <div className="eyebrow"><span className="eyebrow-dot" />Your English, one word at a time</div>
         <h1>English Vocabulary<span>Grade 9</span></h1>
+        <p className="hero-author" data-testid="text-byline">By <strong>Teacher Ali</strong></p>
         <p className="hero-subtitle">Learn • Remember • Improve</p>
         <p className="hero-desc">A bright little place to explore your English words, meet their Arabic meanings and grow your confidence — one unit at a time.</p>
         <div className="hero-actions">
