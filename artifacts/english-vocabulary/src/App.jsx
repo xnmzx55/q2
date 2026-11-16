@@ -11,6 +11,9 @@ import { UnitCard } from "@/components/UnitCard";
 import { WordCard } from "@/components/WordCard";
 import { units } from "@/data/vocabulary";
 import { Link, Route, Switch, useLocation, useParams, Router as WouterRouter } from "wouter";
+import { useHashLocation } from "wouter/use-hash-location";
+
+const USE_HASH_ROUTER = import.meta.env.VITE_HASH_ROUTER === "1";
 
 const queryClient = new QueryClient();
 
@@ -181,7 +184,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
+        <WouterRouter {...(USE_HASH_ROUTER ? { hook: useHashLocation } : { base: import.meta.env.BASE_URL.replace(/\/$/, "") })}>
           <Router />
         </WouterRouter>
         <Toaster />
