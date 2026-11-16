@@ -49,9 +49,6 @@ function UnitCollection({ compact = false }) {
 function HomePage() {
   return (
     <>
-      <section className="container logo-banner">
-        <img src={`${import.meta.env.BASE_URL}images/logo.jpg`} alt="English Words – Learn, Explore, Remember" data-testid="img-logo" />
-      </section>
       <Hero />
       <SearchBar />
       <UnitCollection />

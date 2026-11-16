@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { GraduationCap, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "wouter";
 
 export function Navigation() {
@@ -16,7 +16,7 @@ export function Navigation() {
     <header className="topbar">
       <div className="container nav-inner">
         <Link href="/" className="brand" data-testid="link-brand">
-          <span className="brand-mark"><GraduationCap size={25} strokeWidth={2.2} /></span>
+          <img className="brand-logo" src={`${import.meta.env.BASE_URL}images/logo-small.jpg`} alt="English Words logo" data-testid="img-logo" />
           <span className="brand-name">English Vocabulary<small>Learn a little every day</small></span>
         </Link>
         <button className="mobile-menu" aria-label={open ? "Close navigation" : "Open navigation"} aria-expanded={open} onClick={() => setOpen(!open)} data-testid="button-mobile-menu">
